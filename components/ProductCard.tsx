@@ -103,7 +103,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       </CardContent>
       <CardFooter className="flex flex-col gap-3">
         <Button className="w-full" onClick={handleBuyNow}>
-          Purchase &amp; Download
+          Purchase & Download
         </Button>
         <Button variant="outline" className="w-full border-dashed">
           Preview sample
