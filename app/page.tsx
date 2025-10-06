@@ -55,21 +55,21 @@ export default function Home() {
     <main className="relative pb-24 pt-20">
       <section className="container relative z-10 flex flex-col gap-10 text-center">
         <div className="mx-auto max-w-xl">
-          <Badge className="mb-6 w-fit">
-            Launch collection
+          <Badge variant="colorful" className="mb-6 w-fit animate-pulse">
+            🎉 Launch collection
           </Badge>
-          <h1 className="text-balance text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
+          <h1 className="text-balance text-4xl font-semibold tracking-tight bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent md:text-5xl lg:text-6xl">
             Digital products you can launch this weekend
           </h1>
-          <p className="mt-6 text-lg text-slate-600">
+          <p className="mt-6 text-lg text-white/90 bg-black/20 backdrop-blur-sm rounded-lg p-4">
             Level up your content creation with courses, UI kits, and guides curated for modern makers. Download instantly and start building without the guesswork.
           </p>
         </div>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Button className="px-8 text-base">Browse the collection</Button>
+          <Button className="px-8 text-base shadow-xl">Browse the collection</Button>
           <Link
             href="#products"
-            className="inline-flex h-11 items-center justify-center rounded-md border border-slate-200 bg-white px-8 text-base font-medium text-slate-900 transition-colors hover:bg-slate-100"
+            className="inline-flex h-11 items-center justify-center rounded-md border-2 border-purple-300 bg-white/90 backdrop-blur px-8 text-base font-medium text-purple-700 transition-all hover:bg-purple-50 hover:border-purple-400 hover:shadow-lg"
           >
             View products <ArrowRightIcon className="ml-2 h-4 w-4" />
           </Link>
@@ -78,17 +78,17 @@ export default function Home() {
           {features.map(({ title, description, icon: Icon }) => (
             <Card
               key={title}
-              className="border-none bg-white/80 p-6 shadow-lg ring-1 ring-slate-200/60 backdrop-blur supports-[backdrop-filter]:bg-white/60"
+              className="border-none bg-white/90 p-6 shadow-xl ring-2 ring-purple-200/60 backdrop-blur supports-[backdrop-filter]:bg-white/70 hover:shadow-2xl transition-shadow duration-300"
             >
               <CardHeader className="space-y-4 p-0">
-                <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-sky-100 text-sky-600">
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-purple-500 to-pink-500 text-white shadow-lg">
                   <Icon className="h-5 w-5" />
                 </span>
-                <CardTitle className="text-left text-xl font-semibold">
+                <CardTitle className="text-left text-xl font-semibold bg-gradient-to-r from-purple-700 to-pink-700 bg-clip-text text-transparent">
                   {title}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="p-0 pt-3 text-left text-sm text-slate-600">
+              <CardContent className="p-0 pt-3 text-left text-sm text-slate-700">
                 {description}
               </CardContent>
             </Card>
@@ -101,10 +101,10 @@ export default function Home() {
         className="container relative z-10 mt-20 flex flex-col gap-12"
       >
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+          <h2 className="text-3xl font-semibold tracking-tight bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent md:text-4xl">
             Curated downloads for modern creators
           </h2>
-          <p className="mt-4 text-slate-600">
+          <p className="mt-4 text-white/90 bg-black/20 backdrop-blur-sm rounded-lg p-4">
             Choose a resource crafted to accelerate your workflow. Every download is ready to use with zero friction.
           </p>
         </div>
@@ -117,19 +117,19 @@ export default function Home() {
       </section>
 
       <section className="container relative z-10 mt-24 grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
-        <Card className="border-none bg-white/90 p-8 shadow-xl ring-1 ring-slate-200/60 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+        <Card className="border-none bg-white/90 p-8 shadow-2xl ring-2 ring-purple-200/60 backdrop-blur supports-[backdrop-filter]:bg-white/70">
           <CardHeader className="space-y-3 p-0">
-            <CardTitle className="text-3xl font-semibold">
+            <CardTitle className="text-3xl font-semibold bg-gradient-to-r from-purple-700 to-pink-700 bg-clip-text text-transparent">
               Stay in the loop
             </CardTitle>
-            <p className="text-slate-600">
+            <p className="text-slate-700">
               Sign up for product drops, launch discounts, and behind-the-scenes lessons. No spam—only actionable resources.
             </p>
           </CardHeader>
           <CardContent className="p-0 pt-6">
             <form className="flex flex-col gap-3 sm:flex-row">
               <Input placeholder="you@example.com" type="email" required />
-              <Button type="submit" className="w-full sm:w-auto">
+              <Button type="submit" className="w-full sm:w-auto shadow-lg">
                 Join waitlist
               </Button>
             </form>
@@ -139,9 +139,9 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        <Card className="border-none bg-slate-100/70 p-8 shadow-lg ring-1 ring-slate-200/60 backdrop-blur supports-[backdrop-filter]:bg-slate-100/40">
+        <Card className="border-none bg-gradient-to-br from-purple-100/70 to-pink-100/70 p-8 shadow-xl ring-2 ring-purple-200/60 backdrop-blur supports-[backdrop-filter]:bg-purple-100/40">
           <CardHeader className="space-y-3 p-0">
-            <CardTitle className="text-2xl font-semibold">
+            <CardTitle className="text-2xl font-semibold bg-gradient-to-r from-purple-800 to-pink-800 bg-clip-text text-transparent">
               Why creators trust us
             </CardTitle>
           </CardHeader>
@@ -151,7 +151,7 @@ export default function Home() {
                 key={title}
                 className="flex items-start gap-4 rounded-xl border border-slate-200 bg-white/70 p-4"
               >
-                <span className="mt-1 flex h-10 w-10 items-center justify-center rounded-full bg-sky-100 text-sky-600">
+                <span className="mt-1 flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-purple-500 text-white shadow-md">
                   <Icon className="h-5 w-5" />
                 </span>
                 <div className="space-y-1">

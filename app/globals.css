@@ -4,16 +4,17 @@
 
 @layer base {
   body {
-    background-color: #f8fafc;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #fda085 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
     color: #0f172a;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: radial-gradient(
-        rgba(56, 189, 248, 0.18) 1px,
-        transparent 0
-      ),
-      radial-gradient(rgba(96, 165, 250, 0.12) 1px, transparent 0);
-    background-position: 0 0, 25px 25px;
-    background-size: 50px 50px;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 }

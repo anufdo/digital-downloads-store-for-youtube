@@ -18,7 +18,7 @@ export const products: Product[] = [
     title: "E-Book: Web Development Guide",
     description: "Complete guide to modern web development with Next.js and React",
     price: 2999, // $29.99 in cents
-    priceId: "price_test_ebook", // Replace with actual Stripe Price ID
+    priceId: "price_1SFGhxCFvSvpLBdHfxcASaVg", // Real Stripe Price ID
     downloadUrl: "/downloads/web-dev-guide.pdf",
     category: "Guides",
     level: "Beginner",
@@ -35,7 +35,7 @@ export const products: Product[] = [
     title: "UI Kit: Professional Dashboard",
     description: "Premium UI components and templates for dashboard applications",
     price: 4999, // $49.99 in cents
-    priceId: "price_test_uikit", // Replace with actual Stripe Price ID
+    priceId: "price_1SFGhyCFvSvpLBdH34PQax04", // Real Stripe Price ID
     downloadUrl: "/downloads/ui-kit.zip",
     category: "Design",
     level: "Intermediate",
@@ -51,7 +51,7 @@ export const products: Product[] = [
     title: "Video Course: TypeScript Mastery",
     description: "Master TypeScript with 10+ hours of video content and exercises",
     price: 7999, // $79.99 in cents
-    priceId: "price_test_course", // Replace with actual Stripe Price ID
+    priceId: "price_1SFGhzCFvSvpLBdH2z4ekxaS", // Real Stripe Price ID
     downloadUrl: "/downloads/typescript-course.zip",
     category: "Courses",
     level: "Advanced",
